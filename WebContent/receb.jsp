@@ -7,10 +7,18 @@
 <title>Nome recebido com sucesso</title>
 </head>
 <body>
-	<%=
-		
-		"Nome recebido com sucesso: " + request.getParameter("nome")
+	<%="Nome recebido com sucesso: " + request.getParameter("nome")%>
 	
-	%>
+	<%!int cont =2;
+	
+		public int retorna(int n){
+			
+			return n * 3;
+		}
+	
+	%> <br>
+	
+	<%= cont %><br>
+	<%= retorna(5) %>
 </body>
 </html>
